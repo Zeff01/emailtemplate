@@ -58,7 +58,7 @@ function App() {
           {state && capitalizeWords(state)} | Expo Booth Requirement | ExpoQuote
         </p>
         <br />
-        <h1>Good Morning {name && capitalizeWords(name)},</h1>
+        <p>Good Morning {name && capitalizeWords(name)},</p>
         <br />
         <p>
           I am contacting you regarding the exhibitions that are happening in{" "}
