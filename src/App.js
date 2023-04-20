@@ -54,8 +54,8 @@ function App() {
       <p className="p-8">
         <h1>Subject</h1>
         <p>
-          {capitalizeWords(companyName)} | {state?.toUpperCase()}| Expo Booth
-          Requirement | ExpoQuote
+          {companyName && capitalizeWords(companyName)} | {state?.toUpperCase()}
+          | Expo Booth Requirement | ExpoQuote
         </p>
         <br />
         <h1>Good Morning {name?.toUpperCase()},</h1>
@@ -75,21 +75,22 @@ function App() {
         </p>
         <br />
         <p>
-          I would like to include {capitalizeWords(companyName)} as one of our
-          exhibitions stand builders in {city?.toUpperCase()}. We are only
-          seeking partnership with 2 or 3 businesses in each major location to
-          assist us in providing designs & the stand build to our clients.
-          Ideally, we are looking to work with boutique, independent stand
-          builders which can provide a solid point of difference for our clients
-          together with excellent support throughout the development of their
-          projects.
+          I would like to include {companyName && capitalizeWords(companyName)}{" "}
+          as one of our exhibitions stand builders in {city?.toUpperCase()}. We
+          are only seeking partnership with 2 or 3 businesses in each major
+          location to assist us in providing designs & the stand build to our
+          clients. Ideally, we are looking to work with boutique, independent
+          stand builders which can provide a solid point of difference for our
+          clients together with excellent support throughout the development of
+          their projects.
         </p>
         <br />
         <p>
           There is no annual fee or any type of subscription-based payment to be
           on our panel. We provide you our full client specs and you can pick
           and chose which are suitable for you. Could you kindly reply to let me
-          know if {capitalizeWords(companyName)} would like to be one of our
+          know if {companyName && capitalizeWords(companyName)} would like to be
+          one of our
           {state?.toUpperCase()}
           {name?.toUpperCase()} stand builders and Leigh (our Director) will
           give you a call when convenient. If you do work outside of
